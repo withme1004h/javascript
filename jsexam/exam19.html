@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		//함수를 호출할때 함수를 전달하고자할때
+		function highOrderFunction(p) {
+			if (typeof p == 'function') {
+				p('ㅋㅋㅋ');
+			} else {
+				alert('ㅋㅋㅋ');
+			}
+		}
+		highOrderFunction(function (msg) { document.write(msg); });
+		highOrderFunction(function (msg) { console.log(msg); });
+		highOrderFunction();
+	</script>
+</body>
+</html>

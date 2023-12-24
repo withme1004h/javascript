@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+</head>
+<body>
+  <pre>
+  <script>
+    const ary1 = [];
+    const ary2 = new Array();//생성자함수
+    const ary3 = new Array(10); // 크기(아규먼트가 1개일때 숫자인경우) new Array('A')
+    const ary31 = new Array('A'); // 크기 new Array('A')
+    const ary4 = new Array(10, 20, 30);
+    const ary5 = [10];
+    const ary6 = [10, 20, 30];
+    document.writeln("ary1.length - " + ary1.length);
+    document.writeln("ary2.length - " + ary2.length);
+    document.writeln("ary3.length - " + ary3.length);
+    document.writeln("ary31.length - " + ary31.length);
+    document.writeln("ary4.length - " + ary4.length);
+    document.writeln("ary5.length - " + ary5.length);
+    document.writeln("ary6.length - " + ary6.length);
+    for(let ele of ary6) document.write(ele+"<br>");
+    for(let i in ary6) document.write(i+"<br>");
+  </script>
+  </pre>
+</body>
+</html>

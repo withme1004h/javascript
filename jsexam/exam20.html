@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		//리턴값이 함수인 경우
+		function outerFunction() {
+			return function () {
+				document.write('<H1>Hello World .. !</h1>');
+			};
+		}
+		outerFunction()();//리턴된값을 다시호출하기위해 ()한번더
+		var result = outerFunction();
+		result();
+		result();
+	</script>
+</body>
+</html>

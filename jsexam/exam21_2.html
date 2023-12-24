@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		img {			
+			transition: width 1s;
+		}
+	</style>
+</head>
+<body>
+	<h2>이벤트 처리</h2>
+	<hr>
+	<img src="https://i.namu.wiki/i/f4fCZFgCmdf7W3SulzYo3GCNg8SRZMbI3yw91hdysyxEit4StO6_i3BsF6adeVR-hE5ECAXsg_V1DoYzaPa4hD5hde4b8Ueu0bLkSGErRNK6pfn97h35uAz-i5T_VGXuSAJX8Ntj186j91y6Pv8hAg.webp" style="width:300px">
+	<script>
+		const domObj = document.querySelectorAll('img')[0];
+		domObj.addEventListener("click", e => {     
+      if(e.target.style.width == '600px') 
+        e.target.style.width = '300px';
+      else
+        e.target.style.width = '600px';
+    });
+	</script>
+</body>
+</html>
